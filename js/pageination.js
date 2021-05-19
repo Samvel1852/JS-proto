@@ -32,8 +32,8 @@ const Pagination = {
     return array;
   },
   nextPage: function () {
-    this.currentPage = this.currentPage + 1;
-    return this.myArray[this.currentPage];
+    this.currentPage += 1;
+    return Pagination;
   },
   prevPage: function () {
     this.currentPage = this.currentPage - 1;
@@ -65,3 +65,7 @@ console.log(Pagination.nextPage());
 console.log(Pagination.firstPage());
 console.log(Pagination.lastPage());
 console.log(Pagination.goToPage(3));
+// console.log(Pagination.nextPage());
+console.log(Pagination.getPageItems());
+Pagination.nextPage().nextPage();
+console.log(Pagination.getPageItems());
