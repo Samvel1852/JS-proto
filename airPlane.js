@@ -21,6 +21,15 @@ console.log(Armenia.isFlying);
 Armenia.takeOff();
 console.log(Armenia.isFlying);
 
+const Russia = Object.create(Airplane);
+Object.assign(Russia, { isFlying: false });
+
+console.log(Russia.isFlying);
+Russia.takeOff();
+console.log(Russia.isFlying);
+Russia.land();
+console.log(Russia.isFlying);
+
 // Airplane.takeOff();
 // console.log(Airplane.isFlying);
 // Airplane.land();
