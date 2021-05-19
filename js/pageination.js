@@ -33,11 +33,11 @@ const Pagination = {
   },
   nextPage: function () {
     this.currentPage += 1;
-    return Pagination;
+    return this;
   },
   prevPage: function () {
-    this.currentPage = this.currentPage - 1;
-    return this.myArray[this.currentPage];
+    this.currentPage -= 1;
+    return this;
   },
   getPageItems: function () {
     return this.myArray[this.currentPage];
